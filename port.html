@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Luke Choi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="hmm.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("mountains2.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT ME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#gamedev" class="w3-button w3-block w3-black">GAME DEV</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block w3-black">CONTACT ME</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Georgia Institute of Technology</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Luke<br>Choi</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Computational Media</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+    <p>I am Luke Choi, currently a third year Computational Media major at Georgia Tech in Atlanta, Georgia. I was born in Ann Arbor, Michigan, but now live in Philadelphia when not at school. </p>
+    <p>My dream, which I prefer to call a goal, is to become a solo video game developer and begin releasing games within the next few years. </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Projects are hard, self doubt isn't clever, so make lots of stuff before you're dead forever."</i></p>
+      <p>exurb1a, YouTuber and Author</p>
+    </div>
+    <img src="luke.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="gamedev">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">GAME DEV</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Skills');" id="myLink">
+        <div class="w3-col s6 tablink">Skills</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Favorites');">
+        <div class="w3-col s6 tablink">Favorites</div>
+      </a>
+    </div>
+
+    <div id="Skills" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Digital Art</h5>
+      <p class="w3-text-grey">Normal and pixel art using Procreate</p><br>
+    
+      <h5>Programming</h5>
+      <p class="w3-text-grey">Java, C#, and Unity experience</p><br>
+    
+      <h5>Music</h5>
+      <p class="w3-text-grey">Classically trained cellist and music composer and arranger</p><br>
+    </div>
+
+    <div id="Favorites" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Doki Doki Literature Club!</h5>
+      <p class="w3-text-grey">Psychological horror game that pushed me into game dev</p><br>
+    
+      <h5>Undertale</h5>
+      <p class="w3-text-grey">Great example of using game mechanics to reinforce themes</p><br>
+    
+      <h5>Stardew Valley</h5>
+      <p class="w3-text-grey">Proof that game devs can create amazing things alone</p><br>
+    
+      <h5>Before Your Eyes</h5>
+      <p class="w3-text-grey">Pushes the boundaries of storytelling in video games</p><br>
+    
+      <h5>Overwatch</h5>
+      <p class="w3-text-grey">Just for my competetive strategy kick</p>
+    </div>  
+    <img src="stardew.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="contact" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT ME</span></h5>
+    <p>Ask me questions:</p>
+    <img src="lake.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">Email</span> lchoi34@gatech.edu</p>
+    <p><span class="w3-tag">Phone</span> 267-608-8129</p>
+    <p><span class="w3-tag">Mail</span> 301 10th Street NW Apt. 407A Atlanta, GA 30318</p>
+    <p><span class="w3-tag">Art Instagram</span> @wuki.art</p>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
